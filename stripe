@@ -1,1 +1,26 @@
 pk_test_Yar9mAplW2n7HxRzo7w76n8700zdVizK3S
+
+Service Information
+service: notes-app-api
+stage: prod
+region: us-east-2
+stack: notes-app-api-prod
+resources: 43
+api keys:
+  None
+endpoints:
+  POST - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/notes
+  GET - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/notes/{id}
+  GET - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/notes
+  PUT - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/notes/{id}
+  DELETE - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/notes/{id}
+  POST - https://g5sfb4e8hb.execute-api.us-east-2.amazonaws.com/prod/billing
+functions:
+  create: notes-app-api-prod-create
+  get: notes-app-api-prod-get
+  list: notes-app-api-prod-list
+  update: notes-app-api-prod-update
+  delete: notes-app-api-prod-delete
+  billing: notes-app-api-prod-billing
+layers:
+  None
